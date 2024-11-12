@@ -18,7 +18,9 @@
     "test-project": "npx playwright test --project",
     "test-update-snapshots": "npx playwright test --update-snapshots",
     "test-retry": "npx playwright test --retries 2",
-    "test-parallel": "npx playwright test --workers=4"
+    "test-parallel": "npx playwright test --workers=4",
+    "prettier-format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'",
+    "prettier-lint": "prettier --check 'src/**/*.{ts,tsx,js,jsx}'"
   },
   "dummy": {
     "lint": "eslint .",
