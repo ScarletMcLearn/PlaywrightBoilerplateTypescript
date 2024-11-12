@@ -11,8 +11,8 @@ lerna-debug.log*
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Playwright report and test results
-playwright-report/
-test-results/
+/playwright-report/
+/test-results/
 
 # Runtime data
 pids
