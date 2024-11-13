@@ -36,7 +36,7 @@ test('go to home page', async ({ page }) => {
     .toHaveURL('https://practicetestautomation.com/logged-in-successfully/');
 });
 
-test.describe('authentication Tests', () => {
+test.describe('login with correct credentials test', () => {
   test('user can log in with valid credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
