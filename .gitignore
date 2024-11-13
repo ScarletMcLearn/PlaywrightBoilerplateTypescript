@@ -132,3 +132,6 @@ dist
 
 .idea/
 /playwright-report
+/trash
+tests/example.spec.ts
+/tests
