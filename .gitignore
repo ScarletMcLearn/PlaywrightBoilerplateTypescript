@@ -102,8 +102,12 @@ coverage
 .idea/
 
 # Miscellaneous
-/trash
+/trash/*
+!/trash/.gitkeep
 
 # Playwright report and test results
-/playwright-report/
-/test-results/
+/playwright-report/*
+!/playwright-report/.gitkeep
+
+/test-results/*
+!/test-results/.gitkeep
