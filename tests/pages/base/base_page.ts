@@ -22,7 +22,10 @@ export class BasePage {
   }
 
   async navigateTo(url: string): Promise<void> {
-    await this.page.goto(url, { waitUntil: 'domcontentloaded' });
+    await this.page.goto(url, {
+      waitUntil: 'commit',
+      // 'domcontentloaded'
+    });
   }
 
   async click(selector: string): Promise<void> {
