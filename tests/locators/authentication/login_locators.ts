@@ -7,8 +7,8 @@ export class LoginLocators {
   public successMessage: Locator;
 
   constructor(page: Page) {
-    this.usernameField = page.locator('input[name="username"]');
-    this.passwordField = page.locator('input[name="password"]');
+    this.usernameField = page.getByLabel('Username');
+    this.passwordField = page.getByLabel('Password');
     this.submitButton = page.getByRole('button', { name: 'Submit' });
     this.successMessage = page.getByRole('heading', {
       name: 'Logged In Successfully',
