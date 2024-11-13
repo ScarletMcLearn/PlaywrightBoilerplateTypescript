@@ -4,17 +4,27 @@ import { BasePage } from '../base/base_page';
 import { Page } from '@playwright/test';
 
 export class LoginPage extends BasePage {
+  private usernameField = this.page.getByLabel('Username');
+  private passwordField = this.page.getByLabel('Password');
+  private submitButton = this.page.getByRole('button', { name: 'Submit' });
+  
   constructor(page: Page) {
     super(page);
   }
 
   async login(username: string, password: string): Promise<void> {
-    await this.page.getByLabel('Username').fill(username);
-    await this.page.getByLabel('Password').fill(password);
-    await this.page.getByRole('button', { name: 'Submit' }).click();
+    await this.usernameField.fill(username);
+    await this.passwordField.fill(password);
+    await this.submitButton.click();
   }
 
   async isLoginSuccessful(): Promise<boolean> {
-    return this.page.isVisible('role=heading[name="Logged In Successfully"]');
+    const successMessage = await this.page.isVisible(
+      'role=heading[name="Logged In Successfully"]',
+    );
+    console.log('###############2');
+    console.log(successMessage);
+    console.log('!!!!!!!!!!!!!!!!');
+    return successMessage;
   }
 }
