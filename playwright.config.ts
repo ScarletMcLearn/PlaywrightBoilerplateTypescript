@@ -1,4 +1,12 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as dotenv from 'dotenv';
+import * as path from 'path';
+
+// dotenv.config();
+
+dotenv.config({ path: path.resolve(__dirname, 'tests/utils/env/.env') });
+
+console.log('Base URL:', process.env.BASE_URL); // Add this line to log the base URL
 
 /**
  * Read environment variables from file.
@@ -29,6 +37,7 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    baseURL: process.env.BASE_URL || 'https://www.google.com',
     trace: 'on-first-retry',
   },
 
@@ -86,5 +95,4 @@ export default defineConfig({
   expect: {
     timeout: 5000, // 5 seconds for assertions, adjust if assertions need more time
   },
-
 });
