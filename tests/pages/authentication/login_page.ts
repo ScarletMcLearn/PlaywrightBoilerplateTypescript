@@ -7,7 +7,9 @@ export class LoginPage extends BasePage {
   private usernameField = this.page.getByLabel('Username');
   private passwordField = this.page.getByLabel('Password');
   private submitButton = this.page.getByRole('button', { name: 'Submit' });
-  
+  private successMessageSelector =
+    'role=heading[name="Logged In Successfully"]';
+
   constructor(page: Page) {
     super(page);
   }
@@ -20,7 +22,7 @@ export class LoginPage extends BasePage {
 
   async isLoginSuccessful(): Promise<boolean> {
     const successMessage = await this.page.isVisible(
-      'role=heading[name="Logged In Successfully"]',
+      this.successMessageSelector,
     );
     console.log('###############2');
     console.log(successMessage);
