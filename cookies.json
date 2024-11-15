@@ -1,0 +1,32 @@
+[
+  {
+    "name": "unqorkioToken",
+    "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6InJ0ei1wcm9kdWNlckB5b3BtYWlsLmNvbSIsImF1dGhNZXRob2QiOiJsb2dpblNjcmVlbiIsImlwIjoiMTAzLjIwNS42OS4xNjkiLCJpc0Rlc2lnbmVyVXNlciI6ZmFsc2UsInNlc3Npb25JZCI6IjIxYmU5OTU0LTNiOTMtNDA5OS1hNzkxLTczZGVjYmFlYjA1NyIsInJlZnJlc2hFeHAiOjE3MzE3NTg1MDU5NDAsIl9jc3JmIjoiQXFVMFJlWjFnR0FQTXhMMkVXSE42ZGNRIiwiZXhwIjoxNzMxNjg2NTA1fSwiZXhwIjoxNzMxNjg2NTA1LCJpYXQiOjE3MzE2NzIxMDV9.dU7y39XM2H2cHwhLMrk075_IovUvgajlQH7wJff3Dph9Z389oHiAMdG9IjE76Ga469C8uKn-IXwI4HzQNrGRDtpbF-pLl-BDUnDWjLDU-JL25lxar9MNNSOdrMbENTyjs3hkzG_5jnxpohIqw45M_45XqEi3CVSYZaw1OMulqXMIjjj77IOux3NuqyIuzxwF4ZWGy3UocdNvX5YXESiAu1Lo2TCsAtpZ8Izm_M1XIzwjK5nhUTcKoKoTkoAfeRPs74fY98FjlHH-pa_A5AOESonfr4346sk4Nu5gBDfv6T8YnBlmYEzgfhs1Q3RE46P3ZJ1-0ZVonKVxNsqdFL4zWQ",
+    "domain": "american-equity-qa-uatx.unqork.io",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "UQK-AUTH-USER",
+    "value": "%7B%22exp%22%3A1731686505%7D",
+    "domain": "american-equity-qa-uatx.unqork.io",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "UQK-AUTH-XSRF",
+    "value": "kcF57kRz-KP0CNfegNJ870Wrzoiy-S13imro",
+    "domain": "american-equity-qa-uatx.unqork.io",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]

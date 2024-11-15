@@ -6,7 +6,7 @@ import { browsers } from './tests/utils/browsers/browser_config';
 
 dotenv.config({ path: path.resolve(__dirname, 'tests/utils/env/.env') });
 
-console.log('Base URL:', process.env.BASE_URL); // Add this line to log the base URL
+console.log('Base URL:', process.env.QA_BASE_URL); // Add this line to log the base URL
 
 /**
  * Read environment variables from file.
@@ -37,7 +37,7 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    baseURL: process.env.BASE_URL || 'https://www.google.com',
+    baseURL: process.env.QA_BASE_URL || 'https://www.google.com',
     trace: 'on-first-retry',
   },
 

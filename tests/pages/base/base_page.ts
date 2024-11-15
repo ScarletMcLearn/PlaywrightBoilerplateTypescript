@@ -24,8 +24,19 @@ export class BasePage {
   async navigateTo(url: string): Promise<void> {
     await this.page.goto(url, {
       waitUntil: 'commit',
-      // 'domcontentloaded'
+      // 'domcontentloaded',
+      // 'networkidle',
     });
+    // await this.page.waitForLoadState('load');
+    // await this.page.waitForNavigation();
+
+    // await this.page.waitForLoadState('load');
+
+    // await this.page.waitForSelector('body');
+    // // await this.page.waitForTimeout(5000); // Wait for 5 seconds
+
+    const body = this.page.locator('body'); // Use a locator for the body element
+    await body.waitFor();
   }
 
   async click(selector: string): Promise<void> {

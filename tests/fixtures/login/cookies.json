@@ -1,0 +1,32 @@
+[
+  {
+    "name": "unqorkioToken",
+    "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6InJ0ei1wcm9kdWNlckB5b3BtYWlsLmNvbSIsImF1dGhNZXRob2QiOiJsb2dpblNjcmVlbiIsImlwIjoiMTAzLjIwNS42OS4xNjkiLCJpc0Rlc2lnbmVyVXNlciI6ZmFsc2UsInNlc3Npb25JZCI6ImI0OGNlNWIzLWM0Y2UtNDdmNi1hMmQ1LWFlMjI5NjNiOTI1YiIsInJlZnJlc2hFeHAiOjE3MzE3NTg3Mzg5NTYsIl9jc3JmIjoiLWtqTDdHdFBvQWNhc09hUlhEMC1rZzIxIiwiZXhwIjoxNzMxNjg2NzM4fSwiZXhwIjoxNzMxNjg2NzM4LCJpYXQiOjE3MzE2NzIzMzh9.MgwvlMyOGpfIhhZOj0BjjATixJ-HartLjkxtDARF_h8ACQ2Iiz2exBnNmZk1X6c_cKkZsu8Wyizc7EIiKdOXPhGJbIsFHkHLZY86gpxfNomtMmQLagLD8PJLATGLIlRd_opIZRnEDyjFHA92h-zGQAlZt_67-36VaNQrFPdwh5oenAaKODS-PT8cO-76RzHwlRh6RfW9QIyfjlYy5q79_KMVNewsEjlS-yvc5p9SAJ-6Ax0Tc7LRLMY1ijsIr0coTtL1oBXmo7uTUYzJgjg0mnHqCTl9lbi5d0BC1ZzJf3e9pAVeufsNNlAy8f47eP4dQ299k7knJPCzH2K7HQZTDA",
+    "domain": "american-equity-qa-uatx.unqork.io",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": true,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "UQK-AUTH-USER",
+    "value": "%7B%22exp%22%3A1731686738%7D",
+    "domain": "american-equity-qa-uatx.unqork.io",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "UQK-AUTH-XSRF",
+    "value": "xIc1zJEV-mm8kx7IoS6EfOZozXjVcvaDBZIA",
+    "domain": "american-equity-qa-uatx.unqork.io",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]
